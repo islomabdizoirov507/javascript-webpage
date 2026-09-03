@@ -1,6 +1,6 @@
 # JavaScript darslari
 
-JavaScript asoslarini amaliy misollar orqali o'rganish uchun yaratilgan interaktiv veb-sahifa. Loyiha 3-darsdan 18-darsgacha bo'lgan mavzularni qamrab oladi: har bir bo'limdagi **Ishga tushirish** tugmasi tegishli JavaScript kodini bajaradi va natijani sahifaning o'zida ko'rsatadi.
+JavaScript asoslarini amaliy misollar orqali o'rganish uchun yaratilgan interaktiv veb-sahifa. Loyiha 3-darsdan 19-darsgacha bo'lgan mavzularni qamrab oladi: har bir bo'limdagi **Ishga tushirish** tugmasi tegishli JavaScript kodini bajaradi va natijani sahifaning o'zida ko'rsatadi.
 
 ## Loyiha haqida
 
@@ -23,6 +23,7 @@ JavaScript asoslarini amaliy misollar orqali o'rganish uchun yaratilgan interakt
 - 16-dars - obyektlar, dot/bracket notatsiyasi va ichma-ich obyektlar
 - 17-dars - obyekt metodlari, `this`, `Object.keys()`, `Object.values()`, `Object.entries()`, `Object.assign()`, `Object.freeze()` va `Object.seal()`
 - 18-dars - `if`, `else if`, `else` va ichma-ich shart operatorlari
+- 19-dars - `switch`, `case`, `break` va `default` orqali shartlarni tekshirish
 
 ## Texnologiyalar
 

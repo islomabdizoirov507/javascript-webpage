@@ -743,7 +743,74 @@
 //demoIfElse(document.querySelector(".output"));
 // Natija sahifadagi .output blokida ko'rsatiladi.
 // Ushbu kod if-else shart operatorining ishlashini interaktiv tarzda ko'rsatadi.
-// 
+
+// Bugun o'n to'qqizinchi dars: Bu darsda biz switch-case shart operatorini o'rganamiz.
+// Switch-case shart operatori bir nechta shartlarni tekshirish va mos keladigan kod blokini bajarish imkonini beradi.
+// Misol:
+// switch (ifoda) {
+//     case qiymat1:
+//         // qiymat1 ga mos keladigan kod
+//         break;
+//     case qiymat2:
+//         // qiymat2 ga mos keladigan kod
+//         break;
+//     default:
+//         // hech qaysi case ga mos kelmasa bajariladigan kod
+// }
+// Ushbu misol switch-case shart operatorining ishlashini ko'rsatadi.
+// Endi biz ushbu switch-case shart operatorini interaktiv demo sifatida ko'rib chiqamiz.
+//function demoSwitchCase(outputEl) {
+//    const day = 3;
+//    let message;
+//    switch (day) {
+//        case 1:
+//            message = "Bugun dushanba.";
+//            break;
+//        case 2:
+//            message = "Bugun seshanba.";
+//            break;
+//        case 3:
+//            message = "Bugun chorshanba.";
+//            break;
+//        default:
+//            message = "Hafta kuni noma'lum.";
+//    }
+//    printLines(outputEl, [message]);
+//}
+// Ushbu demo funksiyasi haftaning kuniga qarab mos xabarni chiqaradi.
+// Ushbu funksiyani chaqirish orqali switch-case shart operatorining ishlashini interaktiv tarzda ko'rish mumkin.
+// Masalan:
+//demoSwitchCase(document.querySelector(".output"));
+// Natija sahifadagi .output blokida ko'rsatiladi.
+// Ushbu kod switch-case shart operatorining ishlashini interaktiv tarzda ko'rsatadi.
+// Endi biz Switch-Case shart operatori yordamida murakkab shartlarni ham tekshiradigan interaktiv demo yaratishimiz mumkin.
+// Masalan, haftaning kuniga qarab turli xabarlarni chiqaradigan murakkab switch-case demo yaratishimiz mumkin.
+//function complexSwitchCaseDemo(outputEl) {
+//    const day = 3;
+//    const isHoliday = false;
+//    let message;
+//    switch (day) {
+//        case 1:
+//            message = "Bugun dushanba.";
+//            break;
+//        case 2:
+//            message = "Bugun seshanba.";
+//            break;
+//        case 3:
+//            message = "Bugun chorshanba.";
+//            break;
+//        default:
+//            message = "Hafta kuni noma'lum.";
+//    }
+//    if (isHoliday) {
+//        message += " Bugun dam olish kuni.";
+//    }
+//    printLines(outputEl, [message]);
+//}
+// Ushbu demo funksiyasi haftaning kuniga va dam olish kuniga qarab mos xabarni chiqaradi.
+// Masalan:
+//complexSwitchCaseDemo(document.querySelector(".output"));
+
 
 
 // ==========================================================================
@@ -1177,6 +1244,86 @@ const demos = {
             `Sizning bahoyingiz: ${grade}`,
             "--- 3-misol: ichma-ich if-else (isLoggedIn = true, isAdmin = false) ---",
             accessMessage,
+        ];
+    },
+    // 19-dars: Switch-Case shart operatori
+    // 1-misol: hafta kunini aniqlash
+    switchCase() {
+        const day = 5;
+        let message;
+        switch (day) {
+            case 1:
+                message = "Bugun dushanba.";
+                break;
+            case 2:
+                message = "Bugun seshanba.";
+                break;
+            case 3:
+                message = "Bugun chorshanba.";
+                break;
+            case 4:
+                message = "Bugun payshanba.";
+                break;
+            case 5:
+                message = "Bugun juma.";
+                break;
+            case 6:
+                message = "Bugun shanba.";
+                break;
+            case 7:
+                message = "Bugun yakshanba.";
+                break;
+            default:
+                message = "Hafta kuni noma'lum.";
+        }
+        // 2-misol: vaqtni aniqlash
+        const time = 12;
+        let timeMessage;
+        switch (time) {
+            case 1:
+                timeMessage = "Soat 1.";
+                break;
+            case 2:
+                timeMessage = "Soat 2.";
+                break;
+            case 3:
+                timeMessage = "Soat 3.";
+                break;
+            case 4:
+                timeMessage = "Soat 4.";
+                break;
+            case 5:
+                timeMessage = "Soat 5.";
+                break;
+            case 6:
+                timeMessage = "Soat 6.";
+                break;
+            case 7:
+                timeMessage = "Soat 7.";
+                break;
+            case 8:
+                timeMessage = "Soat 8.";
+                break;
+            case 9:
+                timeMessage = "Soat 9.";
+                break;
+            case 10:
+                timeMessage = "Soat 10.";
+                break;
+            case 11:
+                timeMessage = "Soat 11.";
+                break;
+            case 12:
+                timeMessage = "Soat 12.";
+                break;
+            default:
+                timeMessage = "Soat noma'lum.";
+        }
+        return [
+            "--- 1-misol: hafta kunini aniqlash (day = 5) ---",
+            message,
+            "--- 2-misol: vaqtni aniqlash (time = 12) ---",
+            timeMessage,
         ];
     }
 };
