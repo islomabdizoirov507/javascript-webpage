@@ -1,0 +1,112 @@
+:root {
+    --page-bg-1: #070b1f;
+    --page-bg-2: #18103b;
+    --page-bg-3: #0b2a3a;
+    --text-main: #eaf4ff;
+    --text-muted: #bdd3ea;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --glass-shadow: 0 12px 32px rgba(7, 11, 31, 0.35);
+    --button-bg: rgba(139, 233, 255, 0.28);
+    --button-bg-hover: rgba(139, 233, 255, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app-body {
+    min-height: 100vh;
+    color: var(--text-main);
+    background:
+        radial-gradient(circle at 12% 18%, rgba(101, 202, 255, 0.25), transparent 36%),
+        radial-gradient(circle at 85% 8%, rgba(188, 124, 255, 0.2), transparent 34%),
+        linear-gradient(130deg, var(--page-bg-1), var(--page-bg-2) 45%, var(--page-bg-3));
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.hero-section {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: rgba(7, 11, 31, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-section .lead {
+    color: var(--text-muted);
+    max-width: 780px;
+    margin-inline: auto;
+}
+
+.glass-card {
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    -webkit-backdrop-filter: blur(18px) saturate(130%);
+    backdrop-filter: blur(18px) saturate(130%);
+}
+
+.lesson h2 {
+    color: #9fe8ff;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.lesson .desc {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.lesson .desc code {
+    color: #ffd875;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.12rem 0.35rem;
+    border-radius: 0.35rem;
+    font-size: 0.88em;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.glass-btn {
+    color: #0a1a2f;
+    background: var(--button-bg);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-weight: 700;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.glass-btn:hover {
+    color: #05101f;
+    background: var(--button-bg-hover);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+.glass-btn:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(159, 232, 255, 0.35);
+}
+
+.output {
+    margin-top: 0.75rem;
+    border-radius: 0.75rem;
+    padding: 0.8rem 1rem;
+    min-height: 2.25rem;
+    white-space: pre-wrap;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    font-family: Consolas, "Courier New", monospace;
+    color: #d7f1ff;
+    background: rgba(9, 18, 45, 0.48);
+    border: 1px dashed rgba(185, 235, 255, 0.45);
+}
+
+.output:empty::before {
+    content: "Natija shu yerda ko'rinadi...";
+    color: rgba(189, 211, 234, 0.75);
+}
